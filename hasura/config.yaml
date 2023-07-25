@@ -4,3 +4,11 @@ metadata_directory: metadata
 actions:
   kind: synchronous
   handler_webhook_baseurl: http://localhost:3000
+
+databases:
+  - name: default
+    config:
+      driver: postgres
+      connection_info:
+        database_url:
+          from_env: PG_DATABASE_URL
