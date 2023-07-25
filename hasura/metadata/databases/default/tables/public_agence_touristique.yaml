@@ -1,0 +1,11 @@
+table:
+  name: agence_touristique
+  schema: public
+array_relationships:
+  - name: bus_touristiques
+    using:
+      foreign_key_constraint_on:
+        column: agence_id
+        table:
+          name: bus_touristique
+          schema: public

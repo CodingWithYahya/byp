@@ -1,0 +1,11 @@
+table:
+  name: etablissement_scolaire
+  schema: public
+array_relationships:
+  - name: classe_scolaires
+    using:
+      foreign_key_constraint_on:
+        column: etablissement_id
+        table:
+          name: classe_scolaire
+          schema: public

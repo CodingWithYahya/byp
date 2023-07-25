@@ -1,0 +1,22 @@
+table:
+  name: classe_scolaire
+  schema: public
+object_relationships:
+  - name: etablissement_scolaire
+    using:
+      foreign_key_constraint_on: etablissement_id
+array_relationships:
+  - name: eleves
+    using:
+      foreign_key_constraint_on:
+        column: classe_id
+        table:
+          name: eleve
+          schema: public
+  - name: trajet_scolaires
+    using:
+      foreign_key_constraint_on:
+        column: classe_id
+        table:
+          name: trajet_scolaire
+          schema: public

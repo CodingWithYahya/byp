@@ -1,0 +1,15 @@
+table:
+  name: bus_touristique
+  schema: public
+object_relationships:
+  - name: agence_touristique
+    using:
+      foreign_key_constraint_on: agence_id
+array_relationships:
+  - name: trajet_scolaires
+    using:
+      foreign_key_constraint_on:
+        column: bus_id
+        table:
+          name: trajet_scolaire
+          schema: public

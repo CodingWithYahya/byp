@@ -1,0 +1,6 @@
+- "!include public_agence_touristique.yaml"
+- "!include public_bus_touristique.yaml"
+- "!include public_classe_scolaire.yaml"
+- "!include public_eleve.yaml"
+- "!include public_etablissement_scolaire.yaml"
+- "!include public_trajet_scolaire.yaml"

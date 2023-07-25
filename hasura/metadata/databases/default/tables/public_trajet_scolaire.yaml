@@ -1,0 +1,10 @@
+table:
+  name: trajet_scolaire
+  schema: public
+object_relationships:
+  - name: bus_touristique
+    using:
+      foreign_key_constraint_on: bus_id
+  - name: classe_scolaire
+    using:
+      foreign_key_constraint_on: classe_id

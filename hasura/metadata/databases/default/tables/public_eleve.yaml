@@ -1,0 +1,7 @@
+table:
+  name: eleve
+  schema: public
+object_relationships:
+  - name: classe_scolaire
+    using:
+      foreign_key_constraint_on: classe_id
